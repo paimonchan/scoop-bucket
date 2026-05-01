@@ -1,0 +1,23 @@
+{
+    "version": "0.1.1",
+    "description": "Web content fetching MCP server",
+    "homepage": "https://github.com/paimonchan/paimon-mcp-fetch",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/paimonchan/paimon-mcp-fetch/releases/download/v0.1.1/paimon-mcp-fetch-windows-amd64.exe",
+            "hash": "b0e06d49724659a6d27fcf4521ab461fdf6387ff84367bccbd9cadc630fdb58a"
+        }
+    },
+    "bin": "paimon-mcp-fetch-windows-amd64.exe",
+    "checkver": {
+        "github": "https://github.com/paimonchan/paimon-mcp-fetch"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/paimonchan/paimon-mcp-fetch/releases/download/v$version/paimon-mcp-fetch-windows-amd64.exe"
+            }
+        }
+    }
+}
